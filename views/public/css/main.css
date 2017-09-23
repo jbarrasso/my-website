@@ -379,6 +379,7 @@ figure:hover img {
   animation-play-state: running;
 }
 figure:hover .overlay {
+  z-index: 101;
   opacity: 1;
 }
 figure:hover .overlay .buttons a {
