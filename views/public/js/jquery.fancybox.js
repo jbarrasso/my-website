@@ -1871,7 +1871,8 @@
 	F.helpers.title = {
 		defaults : {
 			type     : 'float', // 'float', 'inside', 'outside' or 'over',
-			position : 'bottom' // 'top' or 'bottom'
+			position : 'bottom', // 'top' or 'bottom'
+			color	 : 'black'
 		},
 
 		beforeShow: function (opts) {

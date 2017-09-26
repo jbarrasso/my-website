@@ -90,14 +90,14 @@ a:hover {
   background: #444;
 }
 #top-bar {
-  background: #fff;
+  background: #505050;
   color: #fff;
   -webkit-transition: all 0.2s ease-out 0s;
   transition: all 0.2s ease-out 0s;
   padding: 12px 0;
   -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #dedede;
+
 }
 #top-bar .navbar-nav > li > a:hover {
   background: transparent;
@@ -196,7 +196,7 @@ a:hover {
   border-radius: 0;
 }
 #contact {
-  background: #02bdd5;
+  background: #79A7B8;
   background-size: cover;
   background-attachment: fixed;
   padding: 80px 0;
@@ -211,7 +211,7 @@ a:hover {
 }
 #contact .block h2 {
   margin-bottom: 15px;
-  color: #fff;
+  color: black;
 }
 #contact .block p {
   font-size: 15px;
@@ -232,6 +232,7 @@ a:hover {
 }
 #contact .block .btn-contact i {
   margin-right: 10px;
+  color: #2481A3;
 }
 #contact a{
   text-decoration: none;
@@ -243,33 +244,39 @@ a:hover {
   transition: all 500ms;
   transform-origin: 50% 30%;
   line-height: 40px;
+
 }
 #contact ul a:hover {
  transform: scale(1.2);
+
 }
 #contact .inline-block {
   padding-right: 40px;
 }
 #contact h2{
   padding-left: 0px;
+  color: black;
 }
 #contact p{
   padding-left: 0px;
+  color: black;
 }
 #bio {
   padding: 110px 0;
+  background: #79A7B8;
 }
 #bio .block {
   padding: 20px 30px 0 30px;
 }
 #bio .block h2 {
+  color:black;
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 30px;
   text-transform: uppercase;
 }
 #bio .block p {
-  color: #727272;
+  color: black;
   font-size: 16px;
   line-height: 28px;
   margin-bottom: 35px;
@@ -279,7 +286,6 @@ a:hover {
 }
 .works {
   padding: 80px 0;
-  background: #FCFCFC;
 }
 .works .block {
   position: relative;
@@ -389,6 +395,7 @@ figure:hover .overlay .buttons a {
   transform: scale3d(1, 1, 1);
 }
 figure .overlay {
+  z-index: 101;
   position: absolute;
   top: 0;
   left: 0;
@@ -397,10 +404,11 @@ figure .overlay {
   padding: 10px;
   display: table-cell;
   text-align: center;
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.27);
   opacity: 0;
-  -webkit-transition: opacity 400ms;
-  transition: opacity 300ms;
+  transition: opacity 400ms ease-in-out;
+  -moz-transition: opacity 400ms ease-in-out;
+  -webkit-transition: opacity 400ms ease-in-out;
 }
 figure .overlay a {
   color: #fff;
@@ -434,7 +442,7 @@ figure .buttons {
   width: 30%;
   max-height: 50px;
   max-width: 70px;
-  background: rgba(0, 0, 0, 0.65);
+  background: rgba(0, 0, 0, 0.4);
   transition: all 200ms;
   transform-origin: 50% 30%;
 }
@@ -455,7 +463,8 @@ figure .overlay .buttons:hover{
 figure figcaption {
   padding: 20px 25px;
   margin-top: 0px;
-  color: #666;
+  color: white;
+  background: #2481A3;
 }
 figure figcaption h4 {
   margin: 0;
@@ -587,9 +596,9 @@ figure figcaption p {
   background-color: #CCC;
 }
 #footer {
-  background: #fff;
+  background: #505050;
   padding: 25px 0;
-  color: #555;
+  color: white;
 }
 #footer .copyright {
   font-size: 13px;
@@ -609,21 +618,23 @@ figure figcaption p {
 }
 #footer .social li a {
   font-size: 22px;
-  color: #02bdd5;
+  color: #2481A3;
 }
 .cd-headline.slide .cd-words-wrapper {
-  color: #02bdd5;
+  color: #3D6BD8;
 }
 ul.social-icons {
   height: auto;
   overflow: hidden;
   list-style: none !important;
   margin-bottom: 10px;
+  color: #2481A3;
 }
 ul.social-icons li {
   float: none;
   display: inline-block;
   height: 36px;
+  color: #2481A3;
 }
 #copyright a:hover,
 #copyright nav .menu li a:hover {
@@ -856,30 +867,42 @@ ul.social-icons li {
   left: 14%;
 }
 .fancybox-close {
-  background: url("../images/icons/close.png") no-repeat scroll 0 0 transparent;
+  background: url("../images/icons/close-window-filled.png") no-repeat scroll 0 0 transparent;
+  /* Icons from icons8.com */
   height: 50px;
-  right: 0;
-  top: 0;
+  margin: 0;
+  right: 10;
+  top: 10;
   width: 50px;
 }
 .fancybox-next span {
-  background: url("../images/icons/right.png") no-repeat scroll center center #009ee3;
+  background: url("../images/icons/right.png") no-repeat scroll center center black;
   height: 50px;
   width: 50px;
   right: 0;
 }
 .fancybox-prev span {
-  background: url("../images/icons/left.png") no-repeat scroll center center #009ee3;
+  background: url("../images/icons/left.png") no-repeat scroll center center black;
   height: 50px;
   width: 50px;
   left: 0;
 }
 .fancybox-title h3 {
   font-size: 15px;
-  margin: 0;
+  padding-bottom: 0px;
+  margin-top: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+
 }
-.fancybox-title {
-  padding: 15px 8px;
+.fancybox-title h4{
+  font-size: 15px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: right;
+  color: black;
+
+  padding-right: 12px;
+  padding-bottom: 12px;
 }
 .wrapper_404 h1 {
   font-size: 200px;
@@ -947,6 +970,7 @@ ul.social-icons li {
 }
 .team-member .social-icons .facebook {
   padding: 40x 12px;
+  color: #2481A3;
 }
 .about-feature {
   margin-top: 50px;
