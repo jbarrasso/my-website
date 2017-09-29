@@ -243,7 +243,7 @@ a:hover {
   text-rendering: geometricPrecision;
   position: relative;
   display: inline-block;
-  font-size: 60px;
+  font-size: 56px;
   margin: 0 0 0 30px;
   transition: all 500ms;
   transform-origin: 50% 30%;
@@ -469,8 +469,10 @@ figure figcaption {
   margin-top: 0px;
   color: white;
   background: #C0392B;
+  overflow: hidden;
 }
 figure figcaption h4 {
+
   margin: 0;
 }
 figure figcaption h4 a {
@@ -621,7 +623,7 @@ figure figcaption p {
   margin-right: 15px;
 }
 #footer .social li a {
-  font-size: 22px;
+  font-size: 20px;
   color: #2481A3;
 }
 .cd-headline.slide .cd-words-wrapper {
