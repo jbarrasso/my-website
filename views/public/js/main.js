@@ -109,13 +109,12 @@ $(".fancybox").fancybox({
 
 $(function(){
     $(".navbar-toggle").click(function(){ 
-        $(".collapse.navbar-collapse.navbar-right").collapse('show');
-      //show the menu when "Menu" is clicked.    //it is here that we make the menu behave as a drop-down menu. Or else it will be visible at all times.
+        $(".collapse.navbar-collapse.navbar-right").collapse('toggle');
     });
 });
 
 $(function(){
-    $("a").click(function(){    //this is the piece of code that closes the menu after an item is clicked.
+    $("a").click(function(){ 
         $(".collapse.navbar-collapse.navbar-right").collapse("hide");
     });
 });
