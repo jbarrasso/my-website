@@ -96,7 +96,8 @@ $(".fancybox").fancybox({
     closeClick : true,
     helpers : {
         title : { 
-            type: 'inside' 
+            type: 'inside'
+
         },
         overlay : {
             css : {
@@ -106,6 +107,18 @@ $(".fancybox").fancybox({
     }
 });
 
+$(function(){
+    $(".navbar-toggle").click(function(){ 
+        $(".collapse.navbar-collapse.navbar-right").collapse('show');
+      //show the menu when "Menu" is clicked.    //it is here that we make the menu behave as a drop-down menu. Or else it will be visible at all times.
+    });
+});
+
+$(function(){
+    $("a").click(function(){    //this is the piece of code that closes the menu after an item is clicked.
+        $(".collapse.navbar-collapse.navbar-right").collapse("hide");
+    });
+});
 
 
 
