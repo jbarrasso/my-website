@@ -139,6 +139,17 @@ a:hover {
   visibility: hidden;
   opacity: 0;
 }
+.main-menu {
+padding-top: 0px;
+padding-bottom: 0px;
+padding-left: 10px;
+padding-right: 10px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-left: 0px;
+margin-right: 0px;
+background-color: grey;
+}
 #home {
   background: url('../images/sonoma1.jpg') no-repeat 50%;
   background-attachment: fixed;
@@ -603,7 +614,8 @@ figure figcaption p {
 }
 #footer {
   background: #505050;
-  padding: 25px 0;
+  padding-bottom: 20px;
+  padding-top: 10px;
   color: white;
 }
 #footer .copyright {
