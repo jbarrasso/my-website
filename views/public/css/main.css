@@ -153,7 +153,7 @@ background-color: grey;
 #home {
   background: url('../images/sonoma1.jpg') no-repeat 50%;
   background-attachment: fixed;
-  background-size: 1200px 600px;
+  background-size: cover;
   padding: 210px 0;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -182,6 +182,8 @@ background-color: grey;
   margin-bottom: 15px;
   text-transform: uppercase;
   position: relative;
+  text-align: center;
+
 }
 #home h2 {
   font-size: 18px;

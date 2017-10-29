@@ -6,15 +6,16 @@ Primary style
 
 
 .cd-words-wrapper {
-  display: block;
+  display: inline-block;
   position: relative;
   text-align: right;
+  padding-left: 900px;
 }
 .cd-words-wrapper b {
   display: inline-block;
   position: absolute;
   white-space: nowrap;
-
+  left:0;
   top: 0;
 }
 .cd-words-wrapper b.is-visible {
