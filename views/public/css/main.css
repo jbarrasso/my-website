@@ -79,6 +79,7 @@ a:hover {
 }
 .navbar-header .navbar-brand {
   padding: 10px 0;
+  padding-left: 10px;
 }
 .navbar-header .navbar-brand a {
   height: auto;
