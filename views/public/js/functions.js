@@ -1,7 +1,7 @@
 (function ($) {
 	//jQuery for page scrolling feature - requires jQuery Easing plugin
 	$(function() {
-		$('.navbar-nav li a').bind('click', function(event) {
+		$('.navbar-fixed-top li a').bind('click', function(event) {
 		    $('.navbar-nav li').removeClass('active');
 		    $(this).closest('li').addClass('active');
 			var $anchor = $(this);
@@ -9,7 +9,7 @@
 			if (nav.length) {
 			$('html, body').stop().animate({				
 				scrollTop: $($anchor.attr('href')).offset().top				
-			}, 2400, 'easeInOutExpo');
+			}, 1900, 'easeInOutExpo');
 			
 			event.preventDefault();
 			}
