@@ -152,9 +152,7 @@ margin-right: 0px;
 background-color: grey;
 }
 #home {
-  background: url('../images/sonoma1.jpg') no-repeat 50%;
-  background-attachment: fixed;
-  background-size: cover;
+  background: url('../images/texteditor.jpg') no-repeat;
   padding: 210px 0;
   color: #fff;
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
@@ -169,6 +167,42 @@ background-color: grey;
   left: 0;
   right: 0;
   bottom: 0;
+}
+.var-highlight{
+  font-style: italic;
+  color: #66D9EF;
+}
+.string-highlight{
+  color: #ece47e;
+}
+.equal-highlight{
+  color: #F92672;
+}
+#typewriter{
+    color: #fff;
+    font-size: 1.725em;
+    margin: 0;
+    font-family: "Courier";
+
+    &:after{
+      content: "|";
+      animation: blink 500ms linear infinite alternate;
+    }
+}
+
+@-webkit-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes blink{
+  0%{opacity: 0;}
+  100%{opacity: 1;}
 }
 #home .block {
   position: relative;
@@ -281,7 +315,7 @@ background-color: grey;
   color: black;
 }
 #bio {
-  padding: 110px 0;
+  padding: 150px 0;
   background: #79A7B8;
 }
 #bio .block {
@@ -302,6 +336,13 @@ background-color: grey;
 }
 #bio .block img {
   max-width: 100%;
+}
+img.profpic {
+  border-radius: 100%;
+  box-shadow: 0px 0px 100px #000; 
+   -webkit-box-shadow: 0px 0px 100px #000; 
+   -ms-box-shadow: 0px 0px 100px #000;
+   -o-box-shadow: 0px 0px 100px #000; 
 }
 .works {
   padding: 80px 0;

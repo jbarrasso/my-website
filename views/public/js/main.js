@@ -56,10 +56,6 @@ jQuery(document).ready(function(){
 
 
 $(document).ready(function(){
-
-
-
-
     $(window).scroll(function () {
         if ($(window).scrollTop() > 50) {
             $(".navbar-brand a").css("color","#fff");
@@ -71,14 +67,11 @@ $(document).ready(function(){
     });
 
     $("#clients-logo").owlCarousel({
- 
         itemsCustom : false,
         pagination : false,
         items : 5,
         autoplay: true,
-
     })
-
 });
 
 
@@ -118,6 +111,9 @@ $(function(){
         $(".collapse.navbar-collapse.navbar-right").collapse("hide");
     });
 });
+
+
+
 
 
 
