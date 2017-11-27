@@ -1,8 +1,8 @@
 (function ($) {
 
 	function setupTypewriter(t) {
+		t.style.visibility = "visible";
 	    var HTML = t.innerHTML;
-
 	    t.innerHTML = "";
 
 	    var cursorPosition = 0,
@@ -62,6 +62,7 @@
 	        type: type
 	    };
 	}
+
 
 	var typer = document.getElementById('typewriter');
 

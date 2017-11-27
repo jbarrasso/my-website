@@ -179,6 +179,7 @@ background-color: grey;
   color: #F92672;
 }
 #typewriter{
+    visibility: hidden;
     color: #fff;
     font-size: 1.725em;
     margin: 0;
